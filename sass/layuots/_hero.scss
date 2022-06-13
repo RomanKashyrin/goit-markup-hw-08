@@ -1,0 +1,48 @@
+/*
+==============================
+| Секция герой (Hero)
+==============================
+*/
+
+/* overlay */
+.overlay {
+    padding-top: 200px;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../img/background.jpg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-color: var(--dark-background-color);
+}
+
+.hero__container {
+    text-align: center;
+}
+
+.hero__title {
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--main-background-color);
+}

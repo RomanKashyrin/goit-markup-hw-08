@@ -1,0 +1,27 @@
+// utils
+@import'./utils/variables';
+@import'./utils/visually-hidden';
+
+// base
+@import'./base/common';
+@import'./base/reset';
+@import'./base/container';
+
+
+// components
+@import'./components/button';
+@import'./components/socials';
+@import'./components/logo';
+@import'./components/modal-forms';
+
+
+// layuots
+@import'./layuots/header';
+@import'./layuots/hero';
+@import'./layuots/about';
+@import'./layuots/lessons';
+@import'./layuots/team';
+@import'./layuots/clients';
+@import'./layuots/portfolio-filters';
+@import'./layuots/portfolio-projects';
+@import'./layuots/footer';

@@ -1,0 +1,28 @@
+/*
+==============================
+| Особенности
+==============================
+*/
+.about__list {
+    display: flex;
+}
+
+.about__item {
+    width: 270px;
+    margin-right: 30px;
+}
+
+.about__item:last-child {
+    margin-right: 0;
+}
+
+.about__title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+}

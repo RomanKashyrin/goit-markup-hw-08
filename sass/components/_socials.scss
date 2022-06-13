@@ -1,0 +1,122 @@
+/* icons-team */
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team__socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    background-color: #ffffff;
+    color: #303030;
+
+    border-radius: 50%;
+
+    transition: background-color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+      background-color: #2196f3;
+    }
+}
+
+.team__socials-list {
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team__socials-item {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+}
+
+.team__socials-icon {
+    fill: var(--icon-color);
+    transition: fill 250ms var(--timing-function);
+}
+
+.team__socials-link:hover .team__socials-icon,
+.team__socials-link:focus .team__socials-icon {
+    fill: #ffffff;
+}
+
+/* icon-about */
+.about__icon-background {
+    margin-bottom: 30px;
+
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 4px;
+
+    background-color: #f5f4fa;
+}
+
+/* icon-footer */
+
+.footer__socials {
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+}
+
+.footer__socials-title {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--main-background-color);
+}
+
+.footer__socials-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__socials-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer__socials-link {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    border-radius: 50px;
+
+    transition: background-color 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+}
+
+.footer__socials-icon {
+    fill: var(--main-background-color);
+}
