@@ -11,6 +11,8 @@
 .projects__list {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: -30px;
 }
 
 .projects__item {

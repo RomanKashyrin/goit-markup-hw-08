@@ -86,10 +86,13 @@
 
 // Footer-button
 .footer__mail-submit {
-    min-width: 200px;
+  display: flex;
+  
+
+    width: 200px;
     height: 50px;
 
-    margin-left: 12px;
+    
     padding: 10px 29px;
 
     font-weight: 700;
@@ -112,10 +115,19 @@
     &:focus {
       background-color: #188ce8;
     }
+
+    @media screen and (max-width: 1200px) {
+         margin-left: 12px;
+        }
 }
 
 .footer__mail-button {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.footer__mail-icon {
+  margin-left: 10px;
+  fill: var(--main-background-color);
 }

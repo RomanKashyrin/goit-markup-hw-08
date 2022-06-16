@@ -33,7 +33,6 @@
           <span class="logo__accent">Web</span>Studio
         </a>
 
-        <!-- Якорные ссылки -->
         <nav class="navigation">
           <ul class="list navigation__list">
             <li class="navigation__item">
@@ -75,7 +74,7 @@
 
     <!-- Секция герой (Hero) -->
     <main>
-      <section class="hero overlay">
+      <!-- <section class="hero overlay">
         <div class="container hero__container">
           <h1 class="hero__title">
             Эффективные решения <br />
@@ -85,10 +84,10 @@
             Заказать услугу
           </button>
         </div>
-      </section>
+      </section> -->
 
       <!-- Modal window -->
-      <div class="backdrop is-hidden" data-modal>
+      <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal-wrapper">
           <button data-modal-close class="modal-button" type="button">
             <svg class="modal-icon" width="11" height="11">
@@ -96,7 +95,7 @@
             </svg>
           </button>
 
-          <!-- Modal window form-->
+          
           <strong class="modal-title"
             >Оставьте свои данные, мы вам перезвоним</strong
           >
@@ -144,7 +143,6 @@
               ></textarea>
             </label>
 
-            <!-- Политика конфиденциальности (checkbox) -->
             <label class="modal-form__polisy" for="agree">
               <input
                 class="modal-form__checkbox visually-hidden"
@@ -168,7 +166,7 @@
             </button>
           </form>
         </div>
-      </div>
+      </div> -->
 
       <!-- Особенности -->
       <section class="about">
@@ -235,7 +233,8 @@
             <li class="lessons__item">
               <img
                 class="lessons__img"
-                src="./img/Img.title/img1.jpg"
+                srcset="img\img.title\img1_des@2x.jpg"
+                src="./img/img.title/img1.jpg"
                 alt="руки на клавиатуре печатают код, он отображается на планшете"
                 width="370"
                 height="294"
@@ -245,7 +244,8 @@
             <li class="lessons__item">
               <img
                 class="lessons__img"
-                src="./img/Img.title/img2.jpg"
+                srcset="img\img.title\img2_des@2x.jpg"
+                src="./img/img.title/img2.jpg"
                 alt="руки держат телефон на фоне ноутбука"
                 width="370"
                 height="294"
@@ -255,7 +255,8 @@
             <li class="lessons__item">
               <img
                 class="lessons__img"
-                src="./img/Img.title/img3.jpg"
+                srcset="img\img.title\img3_des@2x.jpg"
+                src="./img/img.title/img3.jpg"
                 alt="палитра цветов на экране планшета"
                 width="370"
                 height="294"
@@ -274,7 +275,7 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./img/Img.title/игорьдемьяненко.jpg"
+                src="./img/img.title/игорьдемьяненко.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
                 height="260"
@@ -333,7 +334,7 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./img/Img.title/ольгарепина.jpg"
+                src="./img/img.title/ольгарепина.jpg"
                 alt="Ольга Репина"
                 width="270"
                 height="260"
@@ -341,7 +342,7 @@
               <div class="team__text">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__position" lang="en">Frontend Developer</p>
-                <ul class=" list team__socials-list">
+                <ul class="list team__socials-list">
                   <li class="team__socials-item">
                     <a
                       class="team__socials-link"
@@ -392,7 +393,7 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./img/Img.title/николайтарасов.jpg"
+                src="./img/img.title/николайтарасов.jpg"
                 alt="Николай Тарасов"
                 width="270"
                 height="260"
@@ -451,7 +452,7 @@
             <li class="team__item">
               <img
                 class="team__img"
-                src="./img/Img.title/михаилермаков.jpg"
+                src="./img/img.title/михаилермаков.jpg"
                 alt="Михаил Ермаков"
                 width="270"
                 height="260"
@@ -566,58 +567,60 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__contact">
-          <a class="logo footer__logo" href="index.html" lang="en">
-            <span class="logo__accent">Web</span>Studio</a
-          >
-          <address class="footer__address">
-            г. Киев, пр-т Леси Украинки, 26
-            <ul class="list footer__group">
-              <li class="footer__item">
-                <a class="link footer__mail" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+        <div class="logo-socials">
+          <div class="footer__contact">
+            <a class="logo footer__logo" href="index.html" lang="en">
+              <span class="logo__accent">Web</span>Studio</a
+            >
+            <address class="footer__address">
+              г. Киев, пр-т Леси Украинки, 26
+              <ul class="list footer__group">
+                <li class="footer__item">
+                  <a class="link footer__mail" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="link footer__phone" href="tel:380961111111"
+                    >+380961111111</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__socials">
+            <h3 class="footer__socials-title">Присоединяйтесь</h3>
+            <ul class="list footer__socials-list">
+              <li class="footer__socials-item">
+                <a href="" class="footer__socials-link">
+                  <svg class="footer__socials-icon" width="20" height="20">
+                    <use href="./img/icon.svg#icon-instagram2"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a class="link footer__phone" href="tel:380961111111"
-                  >+380961111111</a
-                >
+              <li class="footer__socials-item">
+                <a href="" class="footer__socials-link">
+                  <svg class="footer__socials-icon" width="20" height="20">
+                    <use href="./img/icon.svg#icon-twitter1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a href="" class="footer__socials-link">
+                  <svg class="footer__socials-icon" width="20" height="20">
+                    <use href="./img/icon.svg#icon-facebook1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a href="" class="footer__socials-link">
+                  <svg class="footer__socials-icon" width="20" height="20">
+                    <use href="./img/icon.svg#icon-linkedin1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__socials">
-          <h3 class="footer__socials-title">Присоединяйтесь</h3>
-          <ul class="list footer__socials-list">
-            <li class="footer__socials-item">
-              <a href="" class="footer__socials-link">
-                <svg class="footer__socials-icon" width="20" height="20">
-                  <use href="./img/icon.svg#icon-instagram2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__socials-item">
-              <a href="" class="footer__socials-link">
-                <svg class="footer__socials-icon" width="20" height="20">
-                  <use href="./img/icon.svg#icon-twitter1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__socials-item">
-              <a href="" class="footer__socials-link">
-                <svg class="footer__socials-icon" width="20" height="20">
-                  <use href="./img/icon.svg#icon-facebook1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__socials-item">
-              <a href="" class="footer__socials-link">
-                <svg class="footer__socials-icon" width="20" height="20">
-                  <use href="./img/icon.svg#icon-linkedin1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer__form">
           <h3 class="footer__form-title">Подпишитесь на рассылку</h3>
