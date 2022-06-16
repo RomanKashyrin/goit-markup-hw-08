@@ -1,130 +1,131 @@
 /* Общие стили для кнопки */
 .hero__button {
-    display: inline-block;
-    padding: 10px 32px;
+  display: inline-block;
+  padding: 10px 32px;
 
-    min-width: 200px;
+  min-width: 200px;
 
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
 
+  color: var(--main-background-color);
+  background-color: var(--accent-color);
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+
+  transition: background-color 250ms var(--timing-function);
+
+  &:hover {
     color: var(--main-background-color);
     background-color: var(--accent-color);
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: none;
-    border-radius: 4px;
-
-    transition: background-color 250ms var(--timing-function);
-
-    &:hover {
-    color: var(--main-background-color);
-    background-color: var(--accent-color);
- }
+  }
 }
 
 // Modal-button
 .modal-button {
-    align-items: center;
-    justify-content: center;
-    display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 50%;
-    cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
 
-    transition: border-color 250ms var(--timing-function),
-        fill 250ms var(--timing-function);
+  transition: border-color 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
 
-    &:hover,
-    &:focus {
-      border-color: var(--accent-color);
-      fill: var(--accent-color);
-            }
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+  }
 }
 
 // Modal-form-button
 .modal-form__submit-buttom {
-    min-width: 200px;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  // text-align: center;
 
-    margin-top: 30px;
-    padding: 10px 58px;
+  min-width: 200px;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
+  margin-top: 30px;
+  padding: 10px 58px;
 
-    text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 
-    color: #ffffff;
-    background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: var(--accent-color);
 
-    border: none;
-    cursor: pointer;
+  border: none;
+  cursor: pointer;
 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 
-    transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function);
 
-    &:hover,
-    &:focus {
-      background-color: #188ce8;
-    }
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
 
 // Footer-button
 .footer__mail-submit {
   display: flex;
-  
 
-    width: 200px;
-    height: 50px;
+  width: 200px;
+  height: 50px;
 
-    
-    padding: 10px 29px;
+  padding: 10px 29px;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 
-    color: var(--main-background-color);
-    background-color: var(--accent-color);
+  color: var(--main-background-color);
+  background-color: var(--accent-color);
 
-    transition: background-color 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function);
 
-    &:hover,
-    &:focus {
-      background-color: #188ce8;
-    }
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 
-    @media screen and (max-width: 1200px) {
-         margin-left: 12px;
-        }
+  @media screen and (max-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 
 .footer__mail-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer__mail-icon {

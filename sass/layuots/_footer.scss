@@ -81,16 +81,11 @@
 /* footer form */
 
 .footer__form {
-  // align-self: center;
-  // justify-content: center;
+  justify-content: center;
   text-align: center;
 }
 
 .footer__form-title {
-//   justify-content: center;
-//   text-align: center;
-align-self: center;
-
   margin-bottom: 20px;
 
   font-size: 14px;
@@ -100,7 +95,7 @@ align-self: center;
 
   color: var(--main-background-color);
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 93px;
     text-align: start;
   }

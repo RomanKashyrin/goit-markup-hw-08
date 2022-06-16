@@ -27,13 +27,67 @@
   </head>
   <body>
     <!-- Шапка сайта (Header) -->
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header__container">
         <a class="logo" href="index.html" lang="en">
           <span class="logo__accent">Web</span>Studio
-        </a>
+        </a> -->
 
-        <nav class="navigation">
+    <!-- Menu -->
+    <button
+      type="button"
+      class="menu__button is-open"
+      data-menu-button
+      aria-expanded="false"
+      aria-controls="menu-container"
+    >
+      <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+        <use class="menu__close" href="./img/icon.svg#icon-close_24px"></use>
+        <use class="menu__icon" href="./img/icon.svg#icon-menu_24px"></use>
+      </svg>
+    </button>
+
+    <div class="menu-container" id="menu-container" data-menu>
+      <ul class="list menu-nav">
+        <li class="menu-nav__item">
+          <a href="" class="menu-nav__link menu-nav__link--current">Студия</a>
+        </li>
+        <li class="menu-nav__item">
+          <a href="./portfolio.html" class="menu-nav__link">Портфолио</a>
+        </li>
+        <li class="menu-nav__item">
+          <a href="" class="menu-nav__link">Контакты</a>
+        </li>
+      </ul>
+      <ul class="list menu-contacts">
+        <li class="menu-contacts__item">
+          <a href="tel:+380961111111" class="menu-contacts__phone"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="menu-contacts__item">
+          <a href="mailto:info@devstudio.com" class="menu-contacts__mail"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="list menu-socials">
+        <li class="menu-socials__item">
+          <a href="" class="menu-socials__link">Instagram</a>
+        </li>
+        <li class="menu-socials__item">
+          <a href="" class="menu-socials__link">Twitter</a>
+        </li>
+        <li class="menu-socials__item">
+          <a href="" class="menu-socials__link">Facebook</a>
+        </li>
+        <li class="menu-socials__item">
+          <a href="" class="menu-socials__link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- <nav class="navigation">
           <ul class="list navigation__list">
             <li class="navigation__item">
               <a class="link navigation__link current navigation__link--current" href="index.html"
@@ -70,11 +124,11 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     <!-- Секция герой (Hero) -->
     <main>
-      <!-- <section class="hero overlay">
+      <section class="hero overlay">
         <div class="container hero__container">
           <h1 class="hero__title">
             Эффективные решения <br />
@@ -84,10 +138,10 @@
             Заказать услугу
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!-- Modal window -->
-      <!-- <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop is-hidden" data-modal>
         <div class="modal-wrapper">
           <button data-modal-close class="modal-button" type="button">
             <svg class="modal-icon" width="11" height="11">
@@ -95,7 +149,6 @@
             </svg>
           </button>
 
-          
           <strong class="modal-title"
             >Оставьте свои данные, мы вам перезвоним</strong
           >
@@ -161,12 +214,13 @@
                 <a href="" class="modal-form__polisy-text">Условия договора</a>
               </span>
             </label>
+
             <button class="modal-form__submit-buttom" type="submit">
               Отправить
             </button>
           </form>
         </div>
-      </div> -->
+      </div>
 
       <!-- Особенности -->
       <section class="about">
@@ -646,5 +700,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

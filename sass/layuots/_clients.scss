@@ -3,6 +3,16 @@
 | Постоянные клиенты
 ==============================
 */
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .clients__title {
   margin-bottom: 50px;
 
@@ -17,51 +27,41 @@
 }
 
 .clients__list {
+  justify-content: center;
+
   display: flex;
   flex-wrap: wrap;
 
-  @media screen and (min-width: 1200px) {
+  margin: -15px;
+
+  @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
   }
 }
 
 .clients__item {
-  margin-right: 0;
-  margin-bottom: 30px;
-  flex-basis: calc((100% - 30px) / 2);
-
-@media screen and (min-width: 480px) {
-    flex-basis: calc((100% - 30px) / 2);
-    &:nth-last-child(-n + 2) {
-        margin-bottom: -30px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 3 * 30px) / 3);
-
-    &:nth-last-child(-n + 3) {
-        margin-bottom: -30px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-  margin-bottom: 0;
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
   }
-}
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+  }
 }
 
 .clients__link {
   height: 92px;
 
-
   display: flex;
   align-items: center;
   justify-content: center;
-  
 
   border: 1px solid var(--icon-color);
   border-radius: 4px;
