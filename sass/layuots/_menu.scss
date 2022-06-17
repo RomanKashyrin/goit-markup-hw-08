@@ -4,6 +4,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
+
   margin-left: auto;
   padding-top: 10px;
 
@@ -32,6 +33,7 @@
 }
 
 .menu-container {
+  display: none;
  position: absolute;
 
   top: 0;

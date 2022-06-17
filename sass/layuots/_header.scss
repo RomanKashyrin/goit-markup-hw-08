@@ -4,28 +4,33 @@
 ==============================
 */
 .header {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  position: relative;
+  // align-items: center;
   background-color: var(--main-background-color);
   border-bottom: 1px solid #ececec;
 }
 
 .header__container {
   display: flex;
-  align-items: center;
+  // align-items: center;
 }
 
 /* < !-- Якорные ссылки --> */
 .navigation {
   display: flex;
-  align-items: center;
-  margin-right: 305px;
+  // align-items: center;
+  // margin-right: 305px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  margin-left: 88px;
 
   @media screen and (max-width: 767px) {
     display: none;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
 }
@@ -40,10 +45,11 @@
 }
 
 .navigation__link {
+  position: relative;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  display: block;
+  
 
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -82,10 +88,37 @@
 }
 
 .header__group {
-  margin: 0;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
 
-  // margin-left: 305px;
+  @media screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+    margin-top: 302px;
+  }
+
+    @media screen and (min-width: 768px) {
+     margin-top: 21px;
+     margin-bottom: 21px;
+     margin-left: 84px;
+
+    }
+
+        @media screen and (min-width: 1200px) {
+          display: flex;
+          margin-top: 32px;
+          margin-bottom: 32px;
+          margin-left: 302px;
+        }
 }
+
+// .header__item {
+//   @media screen and (max-width: 767px) {
+//     padding-top: 32px;
+//     padding-left: 40px;
+
+//   }
+// }
 
 .header__group .header__item + .header__item {
   margin-left: 50px;
@@ -93,9 +126,12 @@
 
 .header__mail,
 .header__phone {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: block;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
+  // display: block;
+
+  display: flex;
+  align-items: center;
 
   font-weight: 500;
   font-size: 14px;
@@ -104,6 +140,11 @@
   color: var(--main-text-color);
 
   transition: color 250ms var(--timing-function);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
+
 }
 
 .header__mail:hover,

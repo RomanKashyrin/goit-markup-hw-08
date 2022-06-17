@@ -360,6 +360,9 @@ p {
 }
 
 .logo {
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -666,12 +669,7 @@ p {
 ==============================
 */
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
   background-color: var(--main-background-color);
   border-bottom: 1px solid #ececec;
 }
@@ -680,9 +678,6 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 /* < !-- Якорные ссылки --> */
@@ -690,13 +685,19 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 305px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  margin-left: 88px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .navigation {
     margin-left: 93px;
   }
@@ -716,10 +717,10 @@ p {
 }
 
 .navigation__link {
+  position: relative;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  display: block;
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -751,7 +752,41 @@ p {
 }
 
 .header__group {
-  margin: 0;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .header__group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 302px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__group {
+    margin-top: 21px;
+    margin-bottom: 21px;
+    margin-left: 84px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 302px;
+  }
 }
 
 .header__group .header__item + .header__item {
@@ -760,9 +795,12 @@ p {
 
 .header__mail,
 .header__phone {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -770,6 +808,13 @@ p {
   color: var(--main-text-color);
   -webkit-transition: color 250ms var(--timing-function);
   transition: color 250ms var(--timing-function);
+}
+
+@media screen and (min-width: 1200px) {
+  .header__mail,
+  .header__phone {
+    font-size: 14px;
+  }
 }
 
 .header__mail:hover,
