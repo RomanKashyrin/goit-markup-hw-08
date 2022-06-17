@@ -696,12 +696,6 @@ p {
   margin-right: 305px;
 }
 
-@media screen and (max-width: 767px) {
-  .navigation {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 1200px) {
   .navigation {
     margin-left: 93px;
@@ -758,7 +752,6 @@ p {
 
 .header__group {
   margin: 0;
-  margin-left: 305px;
 }
 
 .header__group .header__item + .header__item {
