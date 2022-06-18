@@ -97,7 +97,7 @@
 .header__group {
   margin-left: auto;
   // display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 
   @media screen and (max-width: 767px) {
     flex-direction: column-reverse;
@@ -127,12 +127,13 @@
 // }
 @media screen and (max-width: 1199.98px) {
   .header__group .header__item+.header__item {
-    margin-bottom: 10px;
+    margin-top: 10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header__group .header__item + .header__item {
+    margin-top: 0;
     margin-left: 50px;
   }
 }
@@ -166,11 +167,11 @@
 }
 
 /* icon */
-.header__group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+// .header__group {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
 
 .header__mail,
 .header__phone {

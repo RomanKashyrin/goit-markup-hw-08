@@ -187,6 +187,9 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 200px;
   height: 50px;
   padding: 10px 29px;
@@ -382,7 +385,7 @@ p {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .logo {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -766,8 +769,6 @@ p {
 
 .header__group {
   margin-left: auto;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 @media screen and (max-width: 767px) {
@@ -800,12 +801,13 @@ p {
 
 @media screen and (max-width: 1199.98px) {
   .header__group .header__item + .header__item {
-    margin-bottom: 10px;
+    margin-top: 10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header__group .header__item + .header__item {
+    margin-top: 0;
     margin-left: 50px;
   }
 }
@@ -842,18 +844,6 @@ p {
 }
 
 /* icon */
-.header__group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .header__mail,
 .header__phone {
   -webkit-box-align: center;
@@ -971,11 +961,9 @@ p {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .about__item {
-    width: 100%;
-    margin-bottom: 30px;
-  }
+.about__item {
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1001,12 +989,7 @@ p {
   line-height: 1.14;
   color: var(--secondary-text-color);
   text-transform: uppercase;
-}
-
-@media screen and (min-width: 480px) {
-  .about__title {
-    text-align: center;
-  }
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -1634,6 +1617,14 @@ p {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    width: 570px;
+    margin-left: auto;
+    text-align: start;
+  }
+}
+
 .footer__form-title {
   margin-bottom: 20px;
   font-size: 14px;
@@ -1682,6 +1673,9 @@ p {
 }
 
 .footer__mail-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 450px;
   height: 50px;
   margin-bottom: 20px;

@@ -15,10 +15,11 @@
 }
 
 .about__item {
-  @media screen and (min-width: 480px) {
-    width: 100%;
-    margin-bottom: 30px;
-  }
+  width: 100%;
+  margin-bottom: 30px;
+  // @media screen and (min-width: 480px) {
+
+  // }
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 2 * 30px) / 2);
@@ -40,11 +41,10 @@
 
   color: var(--secondary-text-color);
   text-transform: uppercase;
+  text-align: center;
+  // @media screen and (min-width: 480px) {
 
-  @media screen and (min-width: 480px) {
-    text-align: center;
-    
-  }
+  // }
 
   @media screen and (min-width: 768px) {
     text-align: left;
