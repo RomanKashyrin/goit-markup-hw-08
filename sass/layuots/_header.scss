@@ -19,7 +19,7 @@
 /* < !-- Якорные ссылки --> */
 .navigation {
   display: flex;
-  // align-items: center;
+  align-items: center;
   // margin-right: 305px;
   margin-top: 0;
   margin-bottom: 0;
@@ -28,6 +28,7 @@
 
   @media screen and (max-width: 767px) {
     display: none;
+    
   }
 
   @media screen and (min-width: 1200px) {
@@ -38,10 +39,11 @@
 .navigation__list {
   display: flex;
   align-items: center;
+ 
 }
 
 .navigation__list .navigation__item + .navigation__item {
-  margin-left: 50px;
+  margin-left: auto;
 }
 
 .navigation__link {
@@ -63,6 +65,10 @@
   &:focus {
     color: var(--accent-color);
   }
+}
+
+.navigation__item {
+  margin-right: auto;
 }
 
 .navigation__link.navigation__link--current {
@@ -89,7 +95,7 @@
 
 .header__group {
   margin-left: auto;
-  display: flex;
+  // display: flex;
   flex-wrap: wrap;
 
   @media screen and (max-width: 767px) {
@@ -100,7 +106,7 @@
     @media screen and (min-width: 768px) {
      margin-top: 21px;
      margin-bottom: 21px;
-     margin-left: 84px;
+    //  margin-left: 50px;
 
     }
 
@@ -163,7 +169,7 @@
 
 .header__mail,
 .header__phone {
-  display: flex;
+  // display: flex;
   align-items: center;
 
   color: var(--main-text-color);
