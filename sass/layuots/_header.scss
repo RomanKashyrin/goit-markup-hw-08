@@ -18,6 +18,8 @@
 
 /* < !-- Якорные ссылки --> */
 .navigation {
+  width: 100%;
+  justify-content: space-between;
   display: flex;
   align-items: center;
   // margin-right: 305px;
@@ -28,7 +30,6 @@
 
   @media screen and (max-width: 767px) {
     display: none;
-    
   }
 
   @media screen and (min-width: 1200px) {
@@ -39,7 +40,6 @@
 .navigation__list {
   display: flex;
   align-items: center;
- 
 }
 
 .navigation__list .navigation__item + .navigation__item {
@@ -51,7 +51,6 @@
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  
 
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -67,8 +66,10 @@
   }
 }
 
-.navigation__item {
-  margin-right: auto;
+.navigation__list li:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
 }
 
 .navigation__link.navigation__link--current {
@@ -103,19 +104,18 @@
     margin-top: 302px;
   }
 
-    @media screen and (min-width: 768px) {
-     margin-top: 21px;
-     margin-bottom: 21px;
+  @media screen and (min-width: 768px) {
+    margin-top: 21px;
+    margin-bottom: 21px;
     //  margin-left: 50px;
+  }
 
-    }
-
-        @media screen and (min-width: 1200px) {
-          display: flex;
-          margin-top: 32px;
-          margin-bottom: 32px;
-          margin-left: 302px;
-        }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 302px;
+  }
 }
 
 // .header__item {
@@ -125,11 +125,17 @@
 
 //   }
 // }
-
-.header__group .header__item + .header__item {
-  margin-left: 50px;
+@media screen and (max-width: 1199.98px) {
+  .header__group .header__item+.header__item {
+    margin-bottom: 10px;
+  }
 }
 
+@media screen and (min-width: 1200px) {
+  .header__group .header__item + .header__item {
+    margin-left: 50px;
+  }
+}
 .header__mail,
 .header__phone {
   // padding-top: 32px;
@@ -150,7 +156,6 @@
   @media screen and (min-width: 1200px) {
     font-size: 14px;
   }
-
 }
 
 .header__mail:hover,
