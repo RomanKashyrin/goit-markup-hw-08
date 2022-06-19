@@ -1626,7 +1626,6 @@ p {
 
 @media screen and (min-width: 1200px) {
   .footer__form-title {
-    margin-left: 93px;
     text-align: start;
   }
 }
