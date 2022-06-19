@@ -1399,10 +1399,11 @@ p {
       flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
-  padding-left: 0;
 }
 
 .projects__item {
+  display: block;
+  width: 100%;
   margin-top: 30px;
   margin-left: 30px;
 }
@@ -1419,6 +1420,10 @@ p {
     -ms-flex-preferred-size: calc(100% / 3 - 30px);
         flex-basis: calc(100% / 3 - 30px);
   }
+}
+
+.projects__item:not(:last-child) {
+  margin-bottom: 0;
 }
 
 .projects__link {

@@ -6,14 +6,16 @@
 .projects__list {
   display: flex;
   flex-wrap: wrap;
-  
+
   margin-top: -30px;
   margin-left: -30px;
 
-  padding-left: 0;
+  //   padding-left: 0;
 }
 
 .projects__item {
+  display: block;
+  width: 100%;
   margin-top: 30px;
   margin-left: 30px;
 
@@ -25,18 +27,18 @@
     flex-basis: calc(100% / 3 - 30px);
   }
 
-//   &:nth-child(3n) {
-//     margin-right: 30px;
-//   }
-// &:not(:last-child) {
-//     margin-right: 0;
-// }
+  //   &:nth-child(3n) {
+  //     margin-right: 30px;
+  //   }
+  &:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 
 .projects__link {
   transition: box-shadow 250ms var(--timing-function);
   text-decoration: none;
-//   flex-basis: calc(100% / 3 - 30px);
+  //   flex-basis: calc(100% / 3 - 30px);
 
   &:hover,
   &:focus {
