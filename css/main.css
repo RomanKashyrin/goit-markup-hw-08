@@ -964,8 +964,8 @@ p {
   }
 }
 
-.about__item {
-  width: 100%;
+.about__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1023,12 +1023,6 @@ p {
   border: 1px solid transparent;
   border-radius: 4px;
   background-color: var(--secondary-background-color);
-}
-
-@media screen and (min-widht: 480px) {
-  .about__icon-background {
-    width: 100%;
-  }
 }
 
 /*
@@ -1539,7 +1533,7 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1561,7 +1555,7 @@ p {
 }
 
 .footer__contact {
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {

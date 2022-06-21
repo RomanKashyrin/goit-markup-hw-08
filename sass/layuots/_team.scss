@@ -35,7 +35,6 @@
 
 .team__item {
   width: 100%;
-
   margin: 15px;
 
   background-color: var(--main-background-color);
@@ -47,15 +46,8 @@
   @media screen and (min-width: 768px) {
     margin: 15px;
     flex-basis: calc((100% - 2 * 30px) / 2);
-
-    // &:not(:last-child) {
-    //     margin-bottom: 30px;
-    //   }
   }
 }
-// .team__item:not(:last-child) {
-//   margin-bottom: 30px;
-// }
 
 .team__img {
   width: 100%;
