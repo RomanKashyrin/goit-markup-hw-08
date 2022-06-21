@@ -4,17 +4,14 @@
 ==============================
 */
 .header {
-  // width: 100%;
-  // display: flex;
   position: relative;
-  // align-items: center;
+
   background-color: var(--main-background-color);
   border-bottom: 1px solid #ececec;
 }
 
 .header__container {
   display: flex;
-  // align-items: center;
 }
 
 /* < !-- Якорные ссылки --> */
@@ -23,7 +20,7 @@
   justify-content: space-between;
   display: flex;
   align-items: center;
-  // margin-right: 305px;
+
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -97,8 +94,6 @@
 
 .header__group {
   margin-left: auto;
-  // display: flex;
-  // flex-wrap: wrap;
 
   @media screen and (max-width: 767px) {
     flex-direction: column-reverse;
@@ -108,7 +103,6 @@
   @media screen and (min-width: 768px) {
     margin-top: 21px;
     margin-bottom: 21px;
-    //  margin-left: 50px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -119,15 +113,8 @@
   }
 }
 
-// .header__item {
-//   @media screen and (max-width: 767px) {
-//     padding-top: 32px;
-//     padding-left: 40px;
-
-//   }
-// }
 @media screen and (max-width: 1199.98px) {
-  .header__group .header__item+.header__item {
+  .header__group .header__item + .header__item {
     margin-top: 10px;
   }
 }
@@ -140,10 +127,6 @@
 }
 .header__mail,
 .header__phone {
-  // padding-top: 32px;
-  // padding-bottom: 32px;
-  // display: block;
-
   display: flex;
   align-items: center;
 
@@ -168,15 +151,9 @@
 }
 
 /* icon */
-// .header__group {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
 
 .header__mail,
 .header__phone {
-  // display: flex;
   align-items: center;
 
   color: var(--main-text-color);

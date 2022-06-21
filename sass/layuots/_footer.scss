@@ -79,16 +79,15 @@
 }
 
 /* footer form */
-
 .footer__form {
   justify-content: center;
   text-align: center;
 
   @media screen and (min-width: 1200px) {
-      width: 570px;
-      margin-left: auto;
-      text-align: start;
-    }
+    width: 570px;
+    margin-left: auto;
+    text-align: start;
+  }
 }
 
 .footer__form-title {
@@ -102,7 +101,6 @@
   color: var(--main-background-color);
 
   @media screen and (min-width: 1200px) {
-    // margin-left: 93px;
     text-align: start;
   }
 }
@@ -155,7 +153,6 @@
     width: 358px;
     margin-bottom: 0;
   }
-   
 }
 
 .footer__mail-input::placeholder {

@@ -1,5 +1,4 @@
 .menu__button {
-  
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -36,16 +35,15 @@
 .menu-container {
   display: flex;
   display: none;
-//  position: absolute;
-justify-content: center;
-position: fixed;
-flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  flex-direction: column;
 
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  
+
   z-index: 999;
 
   background-color: var(--main-background-color);
@@ -60,11 +58,7 @@ flex-direction: column;
 
   &.is-open {
     display: flex;
-    // flex-direction: column;
   }
-
-  
-  // justify-content: space-between;
 }
 
 .menu-nav__item:not(:last-child) {
